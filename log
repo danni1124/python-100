@@ -1,0 +1,14 @@
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img =cv2.imread("moon.jpg",0)
+img=np double(img)result=img**0.5
+result=np.uint8(result*255/np.max(result))
+#显示图像
+plt.figure(num='comparision')title-['gray Image','c=1 r-0.5']images=[img,result]
+for i in range(2):
+  plt.subplot(1,2 i+1)
+  plt.imshow(images[i],"gray')
+  plt.title(titleli])
+  plt.xticks([])plt.yticks([])
+plt.show()
